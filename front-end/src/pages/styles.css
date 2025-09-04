@@ -1,0 +1,143 @@
+/* styles.css */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+}
+
+.image-border {
+  border: 10px solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-image: url('https://example.com/your-border-image.jpg');
+}
+
+@keyframes fillBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes emptyBar {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.progress-bar {
+  transition: width 0s;
+}
+
+.fill-animation {
+  animation: fillBar 1s forwards;
+}
+
+.empty-animation {
+  animation: emptyBar 1s forwards;
+}
+
+/* accessories page css */
+
+.acc-page {
+  background-image: url('//bgmap4.png');
+  background-size: cover;
+}
+.options-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 250px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.options-container img {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 24px;
+  border: 8px solid rgb(246, 243, 155);
+}
+.theme-wrapper {
+  background-image: url("https://thumbs.dreamstime.com/b/old-vintage-treasure-map-nautical-theme-background-exploration-adventure-45891239.jpg");
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-size: cover;
+}
+.theme-options {
+  width: 400px;
+  height: 100vh;
+}
+
+.theme-options img {
+  width: 200px;
+  height: auto;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+.theme-options img:focus {
+  border: 8px solid green;
+}
+
+.theme-details {
+  background-image: url("../../public/scroll.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+/*  battleground css  */
+
+.battleground {
+  background-image: url("/war25.png");
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-size: cover;
+}
+
+.card-area {
+  background-image: url("https://thumbs.dreamstime.com/b/old-vintage-treasure-map-nautical-theme-background-exploration-adventure-45891239.jpg");
+  background-size: cover;
+}
+
+.battle-button button {
+  background: linear-gradient(45deg, #ebff0c, #bb7000);
+  transition: all 0.5s;
+}
+
+.battle-button button:hover {
+  background: linear-gradient(45deg, #f0c118, #ca7d00);
+}
+
+.title-reveal {
+  animation: revealAnimation 0.5s ease-in-out;
+}
+
+@keyframes revealAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.card-details{
+  background-image: url("../../public/bg22.png");
+  background-size: cover;
+}

@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "apis": [
+    {
+      "identifier": "blockvision",
+      "source": "@blockvision/v2.0#40d2kt1xlgn2rwxb",
+      "integrity": "sha512-cNnWOM9LnYPkZ8Bj/JiwPagesTgKpI6GUTjCLd5IA+k4TAFdmMGuUf4yznmfhHELi3uteoaNuBVmpkYJHiC1BQ==",
+      "installerVersion": "6.1.1"
+    }
+  ]
+}
